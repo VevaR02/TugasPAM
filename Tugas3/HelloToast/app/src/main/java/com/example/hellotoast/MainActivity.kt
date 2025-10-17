@@ -2,21 +2,17 @@ package com.example.hellotoast
 
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.net.toUri
 
 
 class MainActivity : AppCompatActivity() {
-    private var mCount = 0;
+    private var mCount = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -30,35 +26,36 @@ class MainActivity : AppCompatActivity() {
         val buttonShare = findViewById<Button>(R.id.button_share)
 
 
-        buttonCountUp.setOnClickListener(View.OnClickListener {
-            mCount++;
-            Log.d("mCount", Integer.toString(mCount))
+        buttonCountUp.setOnClickListener {
+            mCount++
+            Log.d("mCount", mCount.toString())
             if (mShowCount != null)
                 mShowCount.text = mCount.toString()
-        })
+        }
 
 
-        buttonToast.setOnClickListener(View.OnClickListener {
+        buttonToast.setOnClickListener {
             val tulisan: String = mShowCount?.text.toString()
-            val toast: Toast = Toast.makeText(this, "Angka yang dimunculkan "+tulisan, Toast.LENGTH_LONG)
+            val toast: Toast =
+                Toast.makeText(this, "Angka yang dimunculkan $tulisan", Toast.LENGTH_LONG)
             toast.show()
-        })
+        }
 
 
-        buttonSwitchPage.setOnClickListener(View.OnClickListener {
+        buttonSwitchPage.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
-        })
+        }
 
-        buttonBrowser.setOnClickListener(View.OnClickListener {
+        buttonBrowser.setOnClickListener {
             val intentbrowse = Intent(Intent.ACTION_VIEW)
-            intentbrowse.setData(Uri.parse("https://www.google.com/"))
+            intentbrowse.setData("https://www.google.com/".toUri())
             startActivity(intentbrowse)
-        })
+        }
 
 
         buttonMap.setOnClickListener {
-            val gmmIntentUri = Uri.parse("geo:0,0?q=Monumen Nasional, Jakarta")
+            val gmmIntentUri = "geo:0,0?q=Monumen Nasional, Jakarta".toUri()
             val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
             mapIntent.setPackage("com.google.android.apps.maps")
             startActivity(mapIntent)
@@ -66,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonDial.setOnClickListener {
             val phoneNumber = "081234567890"
-            val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
+            val dialIntent = Intent(Intent.ACTION_DIAL, "tel:$phoneNumber".toUri())
             startActivity(dialIntent)
         }
 
