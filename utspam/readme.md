@@ -54,19 +54,11 @@ Status Bar (themes.xml): Status bar (bagian paling atas HP) diatur agar selalu b
 
 Navbar Bawah (bottom_nav_color_selector.xml & activity_main.xml): Style kustom (@style/CustomBottomNav) dibuat khusus untuk navbar. Ini menggunakan color selector untuk mengubah warna ikon menjadi biru saat aktif/dicek dan hitam saat tidak aktif.
 
-![Screen 1](../utspam/ss/Screen1.jpg)
-<img src="../utspam/ss/Screen1.jpg" width="50%">
-![Screen 2](../utspam/ss/Screen2.jpg)
-<img src="../utspam/ss/Screen2.jpg" width="50%">
-![Screen 3](../utspam/ss/Screen3.jpg)
-<img src="../utspam/ss/Screen3.jpg" width="50%">
-![Screen 4](../utspam/ss/Screen4.jpg)
-<img src="../utspam/ss/Screen4.jpg" width="50%">
-![Screen 5](../utspam/ss/Screen5.jpg)
-<img src="../utspam/ss/Screen5.jpg" width="50%">
-![Screen 6](../utspam/ss/Screen6.jpg)
-<img src="../utspam/ss/Screen6.jpg" width="50%">
-![Screen 7](../utspam/ss/Screen7.jpg)
-<img src="../utspam/ss/Screen7.jpg" width="50%">
-![Screen 8](../utspam/ss/Screen8.jpg)
-<img src="../utspam/ss/Screen8.jpg" width="50%">
+<img src="../utspam/ss/Screen1.jpg" width="30%">
+<img src="../utspam/ss/Screen2.jpg" width="30%">
+<img src="../utspam/ss/Screen3.jpg" width="30%">
+<img src="../utspam/ss/Screen4.jpg" width="30%">
+<img src="../utspam/ss/Screen5.jpg" width="30%">
+<img src="../utspam/ss/Screen6.jpg" width="30%">
+<img src="../utspam/ss/Screen7.jpg" width="30%">
+<img src="../utspam/ss/Screen8.jpg" width="30%">
