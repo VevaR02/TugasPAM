@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Mesen Makanan</string>
+
+    <string name="welcome_title">Mesen\nMakanan</string>
+    <string name="start">Start now</string>
+
+    <string name="signup_title">Sign up</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+
+    <string name="login_user">Login User</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="nama_lengkap">Nama lengkap</string>
+
+    <string name="home_greeting">Halo Veva,</string>
+    <string name="home_title">Makanan</string>
+    <string name="food_image_desc">Gambar makanan</string>
+
+    <string name="order_title">Pesanan saya</string>
+    <string name="send">Kirim</string>
+
+    <string name="address_title">Alamat Pengiriman</string>
+    <string name="alamat">Alamat</string>
+    <string name="masukan_alamat_lengkap">Masukan alamat lengkap</string>
+    <string name="order_and_send">Order dan kirim</string>
+
+    <string name="thankyou_message">Terima kasih sudah memesan dan mohon menunggu pesanan anda kami mengantarkan pesanan anda.</string>
+    <string name="kirim">Kirim</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_profile">Profile</string>
+</resources>
